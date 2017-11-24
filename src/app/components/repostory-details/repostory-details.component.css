@@ -1,0 +1,45 @@
+.repoName{
+    display: inline-block;
+    height: 15vh;
+}
+.avatarDiv{
+    width: 20vh;
+    display: inline-block;
+    float: left;
+}
+img{
+    height: 15vh;
+}
+h1{
+    margin-top: 0px;
+}
+a, .link {
+    color: #21abc7;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: grab;
+}
+.data{
+    position: relative;
+    padding: 10px;
+    margin-bottom: -1px;
+    line-height: 20px;
+    color: #586069;
+    background-color: #f1f8ff;
+    border: 1px solid #c8e1ff;
+    border-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: bold;
+}
+.repoDetails{
+    margin-top:.5em;
+}
+.repoHeader{
+    background: floralwhite
+}
+i{
+    cursor:grab;
+}

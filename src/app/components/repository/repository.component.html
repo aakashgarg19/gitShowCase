@@ -1,0 +1,13 @@
+<div class="box">
+  <a (click)="gotoRepository(repository?.name)">
+    <div class="imageDiv">
+      <img alt={{repository?.name}} class="badge-img" src={{repository?.owner?.avatar_url}} width="100" height="100">
+    </div>
+    <div class="repositoryData">
+      <h2 class="">
+        <span class="link">{{repository?.name|titlecase}}</span>
+      </h2>
+      <p class="">{{repository?.description}}</p>
+    </div>
+  </a>
+</div>

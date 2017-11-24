@@ -1,0 +1,25 @@
+<div>
+  <div>
+    <i (click)="returnBack()" class="fa fa-arrow-left" aria-hidden="true"> Return Back</i>
+  </div>
+  <div class="repoHeader">
+    <div class="avatarDiv">
+      <img src={{repositoryData?.owner?.avatar_url}}/>
+    </div>
+    <div class="repoName">
+      <h1>{{repositoryData?.name|titlecase}}</h1>
+      <span>{{repositoryData?.description}}</span>
+    </div>
+  </div>
+  <div class="repoDetails">
+    <div class="data">Full Name :- {{repositoryData?.full_name}}</div>
+    <div class="data">Organization Name :- {{repositoryData?.organization?.login|titlecase}}</div>
+    <div class="data">Organization Url :- <a (click)="openUrl(repositoryData.organization.url)">{{repositoryData?.organization?.url}}</a></div>
+    <div class="data">No. Of Forks :- {{repositoryData?.forks}}</div>
+    <div class="data">Open Issues :- {{repositoryData?.open_issues}}</div>
+    <div class="data">Watchers :- {{repositoryData?.watchers}}</div>
+    <div class="data">Github Link :- <a (click)="openUrl(repositoryData.svn_url)">{{repositoryData?.svn_url}}</a></div>
+    <div class="data">Language :- {{repositoryData?.language}}</div>
+    <div class="data">No. Of Subscribers :- {{repositoryData?.subscribers_count}}</div>
+  </div>
+</div>

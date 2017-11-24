@@ -1,0 +1,31 @@
+
+.box{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline-block;
+    padding: 10px;
+    margin: .5em auto;
+    width:100%;
+}
+
+a, .link {
+    color: #21abc7;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: grab;
+}
+.repositoryData{
+    width: 80%;
+    display: inline-block;
+    margin-top: 1em;
+}
+.imageDiv{
+    width: 8em;
+    display: inline-block;
+    margin-top: 2em;
+    float: left;
+    padding-left: 2vw;
+}

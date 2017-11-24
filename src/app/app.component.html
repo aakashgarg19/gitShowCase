@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <h1> Git Showcase </h1>
+    <div *ngFor="let repository of repositories">
+      <app-repository *ngIf="repository && showAllRepos" [repository]="repository" (repoNameEmitter)="selectRepository($event)"></app-repository>
+    </div>
+
+    <div *ngIf="!showAllRepos">
+      <app-repostory-details [repositoryData]="repositoryData" (goBackEmitter)="goToHome()"></app-repostory-details>
+    </div>
+</div>
